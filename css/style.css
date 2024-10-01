@@ -1,0 +1,220 @@
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #E6007A;
+    cursor: pointer;
+}
+
+hr {
+    color: #666666;
+    background-color: #666666;
+    height: 1px;
+    border: none;
+    max-width: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: clip;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 128px;
+    text-align: justify;
+}
+
+.header-1 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 48px;
+    margin-top: 64px;
+    margin-bottom: 20px;
+}
+
+.header-2 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+}
+
+.header-3 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.mono {
+    font-family: monospace;
+}
+
+.delegation-info {
+    padding-bottom: 4px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.section-header-1 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.section-header-2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.section-header-3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.section-body {
+    margin-top: 16px;
+}
+
+.section-body img {
+    width: 100%;
+    height: auto;
+}
+
+.section-body img.pie-chart {
+    width: 80%;
+    height: auto;
+}
+
+.section-body img.vote-allocation-chart {
+    width: 65%;
+    height: auto;
+}
+
+.image-caption {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.figure-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.figure-half {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.figure-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.figure-info {
+    font-style: italic;
+    font-size: 14px;
+}
+
+ol {
+    margin-top: 12px;
+}
+
+ol li {
+    margin-bottom: 4px;
+}
+
+ol > li::marker {
+    font-weight: bold;
+}
+
+ul {
+    margin-top: 12px;
+}
+
+ul li {
+    margin-top: 4px;
+}
+
+.subsection-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width: 720px) {
+    .content {
+        width: 92%;
+    }
+
+    .page-header .helikon-logo {
+        width: 120px;
+    }
+    
+    .page-header .polkadot-logo {
+        width: 120px;
+    }
+
+    .header-1 {
+        font-size: 36px;
+        margin-top: 32px;
+        line-height: 46px;
+    }
+
+    .figure-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .figure-half {
+        width: 90%;
+    }
+
+    .subsection-title {
+        font-size: 15px;
+    }
+
+    table.project-details td:nth-child(2) {
+        width: 116px;
+    }
+}
