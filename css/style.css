@@ -106,6 +106,10 @@ hr {
     margin-top: 16px;
 }
 
+.section-body p {
+    text-align: center;
+}
+
 .section-body img {
     width: 100%;
     height: auto;
@@ -196,9 +200,14 @@ ul li {
     }
 
     .header-1 {
-        font-size: 36px;
+        font-size: 32px;
         margin-top: 32px;
-        line-height: 46px;
+        line-height: 32px;
+    }
+
+    .header-2 {
+        font-size: 24px;
+        line-height: 24px;
     }
 
     .figure-container {
